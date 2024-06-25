@@ -10,10 +10,10 @@ services:
       - "5432:5432"
     # 환경 변수 설정
     environment:
-      POSTGRES_DB: account
+      POSTGRES_DB: app_dev
       # PostgreSQL 계정 및 패스워드 설정 옵션
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     # 볼륨 설정
     volumes:
       - ./volume/postgres/:/var/lib/postgresql/data

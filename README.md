@@ -1,18 +1,25 @@
-# App
+## phoenix init
 
-To start your Phoenix server:
+```
+mix phx.new app --no-dashboard --no-gettext --no-mailer
+```
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## database 추가
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+phoenix 기본 데이터베이스는 PostgreSQL이다 해당 docker 추가
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+```
+docker compose up -d
+```
 
-## Learn more
+## phoenix ecto.create
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```
+mix ecto.create
+```
+
+## phoenix server 실행해보기
+
+```
+mix phx.server
+```
